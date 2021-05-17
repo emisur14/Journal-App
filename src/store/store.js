@@ -6,4 +6,7 @@ const redurces = combineReducers({
     auth: authReducer
 });
 
-export const store = createStore(redurces);
+export const store = createStore(
+    redurces,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    );
